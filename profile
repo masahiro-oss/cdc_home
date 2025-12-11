@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Design Holdings - 理想の先へ</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd44dJ5yR228Jv96q05M/pUqJpA8/yV3O0/5fM4Jb5QhL9p/3b1Jb/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom styles for background and font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light background */
+            line-height: 1.7;
+        }
+        .header-bg {
+            /* Smooth deep blue gradient */
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            min-height: 400px;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #3b82f6; /* Blue highlight */
+            border-radius: 2px;
+        }
+        .card-icon {
+            color: #3b82f6;
+            transition: transform 0.3s ease;
+        }
+        .business-card:hover .card-icon {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header-bg text-white shadow-xl flex items-center justify-center p-6 md:p-12">
+        <div class="container mx-auto max-w-4xl text-center pt-16 pb-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                Capital Design Holdings
+            </h1>
+            <p class="text-3xl md:text-4xl font-light text-blue-300 italic">
+                「理想の先へ」
+            </p>
+            <p class="mt-8 text-lg md:text-xl max-w-2xl mx-auto opacity-90">
+                多角的な事業展開を通じて、持続可能な未来の創造と人々の理想をかたちにすることを目指します。
+            </p>
+            <a href="#business" class="mt-10 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                事業領域を見る <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Mission/Philosophy Section -->
+    <section id="mission" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto max-w-5xl px-6 lg:px-8 text-center">
+            <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Mission</span>
+            <h2 class="text-4xl font-bold text-gray-800 mt-2 section-title mx-auto">
+                なぜ、私たちが存在するのか
+            </h2>
+            <div class="mt-10 grid md:grid-cols-2 gap-12 text-left">
+                <!-- Value 1: Future Creation -->
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md transform hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-globe-asia"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">持続可能な未来の創造</h3>
+                    <p class="text-gray-600">
+                        環境、社会、経済のすべての側面において、次世代に責任を持てる持続的な成長モデルを追求します。多角的な視点から社会課題を見つめ、解決策を提示します。
+                    </p>
+                </div>
+                <!-- Value 2: Realizing Ideals -->
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md transform hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">人々の「理想」をかたちに</h3>
+                    <p class="text-gray-600">
+                        お客様やパートナー、そして働く人々の持つ潜在的な理想やビジョンを、具体的な事業やプロジェクトとして実現するデザイン力こそが、私たちの核となる強みです。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Portfolio Section -->
+    <section id="business" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto max-w-6xl px-6 lg:px-8">
+            <span class="block text-center text-sm font-semibold text-blue-600 uppercase tracking-wider">Portfolio</span>
+            <h2 class="text-4xl font-bold text-gray-800 mt-2 section-title mx-auto text-center">
+                多角的な事業展開
+            </h2>
+            <p class="text-center text-lg text-gray-600 mt-4 mb-12">
+                コンサルティングから先端技術まで、幅広い分野で社会に価値を提供しています。
+            </p>
+
+            <!-- Business Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Business 1: Consulting -->
+                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
+                    <div class="card-icon text-5xl mb-4"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">コンサルティング事業</h3>
+                    <p class="text-gray-600">企業の成長戦略立案から、業務改善、デジタルトランスフォーメーション (DX) 推進まで、包括的なサポートを提供。</p>
+                </div>
+
+                <!-- Business 2: Construction -->
+                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
+                    <div class="card-icon text-5xl mb-4"><i class="fas fa-hard-hat"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">建設業</h3>
+                    <p class="text-gray-600">高品質で安全な社会インフラ、商業施設、住宅の建設・開発を通じて、人々の生活基盤を支えます。</p>
+                </div>
+
+                <!-- Business 3: Finance -->
+                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
+                    <div class="card-icon text-5xl mb-4"><i class="fas fa-sack-dollar"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">ファイナンス</h3>
+                    <p class="text-gray-600">プロジェクトファイナンス、資産運用、M&A戦略など、資本効率を高めるための高度な金融ソリューション。</p>
+                </div>
+                
+                <!-- Business 4: Web3.0/AI -->
+                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
+                    <div class="card-icon text-5xl mb-4"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Web3.0・AI事業開発</h3>
+                    <p class="text-gray-600">ブロックチェーン技術、メタバース、最先端のAI開発を通じて、未来のデジタル経済圏を構築します。</p>
+                </div>
+
+                <!-- Business 5: Real Estate -->
+                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
+                    <div class="card-icon text-5xl mb-4"><i class="fas fa-city"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">不動産事業</h3>
+                    <p class="text-gray-600">開発、賃貸、売買仲介、投資顧問まで、不動産の潜在価値を最大限に引き出す戦略的なアプローチ。</p>
+                </div>
+
+                <!-- Business 6: Trade -->
+                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
+                    <div class="card-icon text-5xl mb-4"><i class="fas fa-truck-fast"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">貿易事業</h3>
+                    <p class="text-gray-600">グローバルなサプライチェーンを最適化し、世界中の高品質な製品・サービスを流通させます。</p>
+                </div>
+
+                <!-- Business 7: IT Advertising -->
+                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500 sm:col-span-2 lg:col-span-1 mx-auto">
+                    <div class="card-icon text-5xl mb-4"><i class="fas fa-bullhorn"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">IT広告事業</h3>
+                    <p class="text-gray-600">データドリブンなデジタル広告戦略とクリエイティブ開発により、クライアントのマーケティング効果を最大化。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-blue-600">
+        <div class="container mx-auto max-w-4xl px-6 lg:px-8 text-center text-white">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+                あなたの理想を、共に。
+            </h2>
+            <p class="text-xl font-light opacity-90 mb-10">
+                幅広い事業シナジーで、既存の枠を超えたソリューションを提供します。
+            </p>
+            <a href="mailto:info@example.com" class="inline-block bg-white text-blue-600 font-bold text-lg py-3 px-10 rounded-full shadow-2xl transition duration-300 transform hover:scale-105 hover:bg-gray-100 border-2 border-white">
+                お問い合わせはこちら <i class="fas fa-envelope ml-2"></i>
+            </a>
+            <!-- Note: Replace mailto:info@example.com with your actual contact link or form URL -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto max-w-6xl px-6 lg:px-8 text-center">
+            <p class="text-lg font-semibold mb-2">Capital Design Holdings</p>
+            <p class="text-sm opacity-75">「理想の先へ」</p>
+            <div class="mt-4 text-xs opacity-60">
+                &copy; 2024 Capital Design Holdings. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
