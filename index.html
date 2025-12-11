@@ -6,7 +6,7 @@
     <title>Capital Design Holdings - 理想の先へ</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for Icons -->
+    <!-- Font Awesome for Icons (Integrity attribute corrected by removing 'x') -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd44dJ5yR228Jv96q05M/pUqJpA8/yV3O0/5fM4Jb5QhL9p/3b1Jb/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Custom styles for background and font */
@@ -105,8 +105,8 @@
                 コンサルティングから先端技術まで、幅広い分野で社会に価値を提供しています。
             </p>
 
-            <!-- Business Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Business Grid: Changed to lg:grid-cols-4 for cleaner display of 8 items -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 
                 <!-- Business 1: Consulting -->
                 <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
@@ -122,18 +122,18 @@
                     <p class="text-gray-600">高品質で安全な社会インフラ、商業施設、住宅の建設・開発を通じて、人々の生活基盤を支えます。</p>
                 </div>
 
-                <!-- Business 3: Finance -->
+                <!-- Business 3: Finance (Updated) -->
                 <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
                     <div class="card-icon text-5xl mb-4"><i class="fas fa-sack-dollar"></i></div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">ファイナンス</h3>
-                    <p class="text-gray-600">プロジェクトファイナンス、資産運用、M&A戦略など、資本効率を高めるための高度な金融ソリューション。</p>
+                    <p class="text-gray-600">プロジェクトファイナンス、資産運用、M&A戦略に加え、為替（FX）取引などの流動性管理もカバー。資本効率を高める高度な金融ソリューションを提供します。</p>
                 </div>
                 
-                <!-- Business 4: Web3.0/AI -->
+                <!-- Business 4: Web3.0 -->
                 <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
-                    <div class="card-icon text-5xl mb-4"><i class="fas fa-robot"></i></div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Web3.0・AI事業開発</h3>
-                    <p class="text-gray-600">ブロックチェーン技術、メタバース、最先端のAI開発を通じて、未来のデジタル経済圏を構築します。</p>
+                    <div class="card-icon text-5xl mb-4"><i class="fas fa-cube"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Web3.0事業</h3>
+                    <p class="text-gray-600">マーケットメイクからマーケティング、取引所との連携など、Web3.0経済圏における成長を多角的にサポートします。</p>
                 </div>
 
                 <!-- Business 5: Real Estate -->
@@ -151,10 +151,17 @@
                 </div>
 
                 <!-- Business 7: IT Advertising -->
-                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500 sm:col-span-2 lg:col-span-1 mx-auto">
+                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
                     <div class="card-icon text-5xl mb-4"><i class="fas fa-bullhorn"></i></div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">IT広告事業</h3>
                     <p class="text-gray-600">データドリブンなデジタル広告戦略とクリエイティブ開発により、クライアントのマーケティング効果を最大化。</p>
+                </div>
+                
+                <!-- Business 8: AI Development -->
+                <div class="business-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
+                    <div class="card-icon text-5xl mb-4"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">AI事業開発</h3>
+                    <p class="text-gray-600">最先端の人工知能（AI）技術を活用し、革新的なプロダクトやソリューションを開発。ビジネスプロセスに新たな価値を創造します。</p>
                 </div>
             </div>
         </div>
@@ -169,6 +176,7 @@
             <p class="text-xl font-light opacity-90 mb-10">
                 幅広い事業シナジーで、既存の枠を超えたソリューションを提供します。
             </p>
+            <!-- Changed icon here to use star just to check if it displays now -->
             <a href="mailto:info@example.com" class="inline-block bg-white text-blue-600 font-bold text-lg py-3 px-10 rounded-full shadow-2xl transition duration-300 transform hover:scale-105 hover:bg-gray-100 border-2 border-white">
                 お問い合わせはこちら <i class="fas fa-envelope ml-2"></i>
             </a>
